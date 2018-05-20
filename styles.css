@@ -7,7 +7,7 @@
   top: 0px;
   height: 50px;
   position: fixed;
-  background: black;
+  background: rgb(3, 137, 214);
 }
 
 .content {
@@ -76,4 +76,27 @@ body {
 .first-title {
   color: #fff;
   margin: auto;
+}
+
+ul.navigation {
+  display: flex;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+ul.navigation > li {
+  display: block;
+  padding: 15px;
+}
+
+ul.navigation a {
+  color: white;
+  text-decoration: none;
+}
+ul.navigation > li:hover {
+  background: rgb(93, 102, 150);
+}
+ul.navigation > li:hover a {
+  color: rgb(255, 217, 0);
 }
