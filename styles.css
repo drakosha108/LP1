@@ -1,7 +1,13 @@
 * {
   box-sizing: border-box;
 }
-
+body {
+  margin: 0;
+  background-image: url(image.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; 
+}
 .header {
   width: 100%;
   top: 0px;
@@ -10,24 +16,25 @@
   background: rgb(3, 137, 214);
 }
 
+
 .content {
   min-height: calc(100vh - 50px);
 }
 
-.first-slide {
+.top-block {
   background-image: url(image.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
 }
 
-.slide {
+.full-height-block {
   height: 100vh;
   width: 100%;
   display: flex;
 }
 
-.slide-center {
+.full-height-block-center {
   margin: auto;
   text-align: center;
 }
@@ -60,9 +67,6 @@
   background: black;
 }
 
-body {
-  margin: 0;
-}
 .circle-logo {
   width: 200px;
 	height: 200px;
@@ -99,4 +103,35 @@ ul.navigation > li:hover {
 }
 ul.navigation > li:hover a {
   color: rgb(255, 217, 0);
+}
+.title-block {
+  height: 200px;
+  background-color: rgb(206, 229, 255);
+  border: 1px solid black;
+}
+.slider {
+  height: 600px;
+}
+.content-block {
+  display: flex;
+  height: 400px;
+  align-items: center;
+}
+.content-block-circle {
+  width: 150px;
+	height: 150px;
+	background:black;
+  border-radius: 75px;
+  display: flex;
+  margin: 50px;
+}
+.content-block-text-wrapper {
+  height: 100%;
+  flex-grow: 1;
+  padding: 50px;
+}
+.content-block-text {
+  background: rgb(6, 25, 90);
+  height: 100%;
+  border-radius: 100px
 }
