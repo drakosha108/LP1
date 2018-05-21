@@ -21,12 +21,7 @@ body {
   min-height: calc(100vh - 50px);
 }
 
-.top-block {
-  background-image: url(image.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-}
+.top-block {}
 
 .full-height-block {
   height: 100vh;
@@ -45,7 +40,7 @@ body {
   color: white;
 }
 
-.slide-button {
+.button {
   border-radius: 10px;
   width: 150px;
   height: 40px;
@@ -109,9 +104,6 @@ ul.navigation > li:hover a {
   background-color: rgb(206, 229, 255);
   border: 1px solid black;
 }
-.slider {
-  height: 600px;
-}
 .content-block {
   display: flex;
   height: 400px;
@@ -134,4 +126,19 @@ ul.navigation > li:hover a {
   background: rgb(6, 25, 90);
   height: 100%;
   border-radius: 100px
+}
+.slider-block {
+  min-height: 75vh;
+  display: flex;
+}
+.slider-thumbnail-content {
+  width: 50%;
+  margin: 40px;
+  margin-right: 0;
+  background: #fff
+}
+.slider-thumbnail-text {
+  width: 50%;
+  margin: 40px;
+  background: #fff;
 }
