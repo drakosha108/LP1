@@ -5,7 +5,8 @@
   "main": "scripts.js",
   "scripts": {
     "test": "npm run lint",
-    "lint": "htmlhint *.html && stylelint *.css"
+    "lint": "htmlhint *.html && stylelint *.css",
+    "start": "hs"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/drakosha108/LP1/issues"
   },
-  "homepage": "https://github.com/drakosha108/LP1#readme"
+  "homepage": "https://github.com/drakosha108/LP1#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
 }
