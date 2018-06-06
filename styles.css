@@ -4,10 +4,19 @@
 
 body {
   margin: 0;
+}
+
+.background {
   background-image: url(image.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+width: 100%;
+height: 100vh;
+position: fixed;
+top: 0;
+opacity: 0.5;
+z-index: -1;
 }
 
 .header {
@@ -15,7 +24,7 @@ body {
   top: 0;
   height: 50px;
   position: fixed;
-  background: rgb(3, 137, 214);
+  background: #00797F;
   z-index: 1;
 }
 
@@ -58,7 +67,7 @@ body {
 
 .footer {
   height: 50px;
-  background: black;
+  background: #00797F;
 }
 
 .circle-logo {
@@ -105,8 +114,7 @@ ul.navigation > li:hover a {
 
 .title-block {
   height: 200px;
-  background-color: rgb(206, 229, 255);
-  border: 1px solid black;
+  background-color: #5A787F;
 }
 
 .content-block {
@@ -131,7 +139,7 @@ ul.navigation > li:hover a {
 }
 
 .content-block-text {
-  background: rgb(6, 25, 90);
+  background: #00768C;
   height: 100%;
   border-radius: 50px;
 }
@@ -164,6 +172,7 @@ ul.navigation > li:hover a {
 .slider-thumbnail-text {
   width: 50%;
   margin: 40px;
+  padding: 20px;
   opacity: 0.5;
   background: rgb(83, 68, 92);
 }
@@ -178,9 +187,19 @@ ul.navigation > li:hover a {
   opacity: 1;
   transform: scale(1.2);
 }
+
+.slider-1-item, .slider-2-for-item, .slider-2-nav-item {
+  overflow: hidden;
+}
+
+.slider-1-item > img, .slider-2-for-item > img, .slider-2-nav-item > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .slider-1-item {
-  background: green;
-  border: 1px solid black;
   width: 300px;
   height: 300px;
   margin: 50px;
@@ -192,8 +211,6 @@ ul.navigation > li:hover a {
   width: 100%;
 }
 .slider-2-for-item {
-  background: green;
-  border: 1px solid black;
   width: 100%;
   height: 300px;
   margin: 20px;
@@ -203,11 +220,12 @@ ul.navigation > li:hover a {
   width: 80%;
 }
 .slider-2-nav-item {
-  background: green;
-  border: 1px solid black;
   height: 50px;
   margin: 20px;
   transition: all 0.5s;
+}
+.slider-1-wrapper {
+  background: rgba(255, 255, 255, 0.5);
 }
 
 @media only screen and (max-width: 900px) {
@@ -232,5 +250,11 @@ ul.navigation > li:hover a {
     height: 100px;
     border-radius: 50px;
     margin: 30px;
+  }
+  .slider-1-item {
+    margin: 30px;
+  }
+  .content-block-text-wrapper {
+    padding: 20px;
   }
 }

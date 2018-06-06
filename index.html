@@ -5,6 +5,7 @@
   <title>My page</title>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
   <script type="text/javascript" src="lib/slick.min.js"></script>
   <link rel="stylesheet" type="text/css" href="./lib/slick.css" />
   <link rel="stylesheet" type="text/css" href="./lib/slick-theme.css" />
@@ -13,24 +14,25 @@
 <!-- my body -->
 
 <body>
+  <div class="background"></div>
   <div class="header">
     <ul class="navigation">
       <li>
-        <a href="#">Home</a>
+        <a href="#home" id="nav-home" >Home</a>
       </li>
       <li>
-        <a href="#">About</a>
+        <a href="#about" id="nav-about" >About</a>
       </li>
       <li>
-        <a href="#">Products</a>
+        <a href="#products" id="nav-products" >Products</a>
       </li>
       <li>
-        <a href="#">Contact</a>
+        <a href="#contact" id="nav-contact" >Contact</a>
       </li>
     </ul>
   </div>
   <div class="content">
-    <div class="full-height-block top-block">
+    <div class="full-height-block top-block" id="home" >
       <div class="full-height-block-center">
         <div class="circle-logo-wrapper">
           <div class="circle-logo">
@@ -44,26 +46,33 @@
       </div>
     </div>
     <div class="title-block"> </div>
-    <div class="slider-block">
+    <div class="slider-block slider-1-wrapper" id="about" >
       <div class="slider-1">
-        <div class="slider-1-item">1</div>
-        <div class="slider-1-item">2</div>
-        <div class="slider-1-item">3</div>
-        <div class="slider-1-item">4</div>
-        <div class="slider-1-item">5</div>
-        <div class="slider-1-item">6</div>
-        <div class="slider-1-item">7</div>
-        <div class="slider-1-item">8</div>
-        <div class="slider-1-item">9</div>
-        <div class="slider-1-item">10</div>
-        <div class="slider-1-item">11</div>
-        <div class="slider-1-item">12</div>
-        <div class="slider-1-item">13</div>
-        <div class="slider-1-item">14</div>
+        <div class="slider-1-item">
+          <img src="./img/img1.jpg" />
+        </div>
+        <div class="slider-1-item">
+          <img src="./img/img2.jpg" />
+        </div>
+        <div class="slider-1-item">
+          <img src="./img/img3.jpg" />
+        </div>
+        <div class="slider-1-item">
+          <img src="./img/img4.jpg" />
+        </div>
+        <div class="slider-1-item">
+          <img src="./img/img5.jpg" />
+        </div>
+        <div class="slider-1-item">
+          <img src="./img/img6.jpg" />
+        </div>
+        <div class="slider-1-item">
+          <img src="./img/img7.jpg" />
+        </div>
       </div>
     </div>
     <div class="title-block"> </div>
-    <div class="content-block">
+    <div class="content-block" id="products" >
       <div class="content-block-circle"></div>
       <div class="content-block-text-wrapper">
         <div class="content-block-text"></div>
@@ -77,40 +86,60 @@
       <div class="content-block-circle"></div>
     </div>
     <div class="title-block"> </div>
-    <div class="slider-block">
+    <div class="slider-block" id="contact">
       <div class="slider-thumbnail-content">
         <div class="slider-2">
           <div class="slider-2-for">
-            <div class="slider-2-for-item">1</div>
-            <div class="slider-2-for-item">2</div>
-            <div class="slider-2-for-item">3</div>
-            <div class="slider-2-for-item">4</div>
-            <div class="slider-2-for-item">5</div>
-            <div class="slider-2-for-item">6</div>
-            <div class="slider-2-for-item">7</div>
-            <div class="slider-2-for-item">8</div>
-            <div class="slider-2-for-item">9</div>
-            <div class="slider-2-for-item">10</div>
-            <div class="slider-2-for-item">11</div>
-            <div class="slider-2-for-item">12</div>
-            <div class="slider-2-for-item">13</div>
-            <div class="slider-2-for-item">14</div>
+            <div class="slider-2-for-item">
+              <img src="./img/img8.jpg" />
+            </div>
+            <div class="slider-2-for-item">
+              <img src="./img/img9.jpg" />
+            </div>
+            <div class="slider-2-for-item">
+              <img src="./img/img10.jpg" />
+            </div>
+            <div class="slider-2-for-item">
+              <img src="./img/img11.jpg" />
+            </div>
+            <div class="slider-2-for-item">
+              <img src="./img/img12.jpg" />
+            </div>
+            <div class="slider-2-for-item">
+              <img src="./img/img13.jpg" />
+            </div>
+            <div class="slider-2-for-item">
+              <img src="./img/img14.jpg" />
+            </div>
+            <div class="slider-2-for-item">
+              <img src="./img/img15.jpg" />
+            </div>
           </div>
           <div class="slider-2-nav">
-            <div class="slider-2-nav-item">1</div>
-            <div class="slider-2-nav-item">2</div>
-            <div class="slider-2-nav-item">3</div>
-            <div class="slider-2-nav-item">4</div>
-            <div class="slider-2-nav-item">5</div>
-            <div class="slider-2-nav-item">6</div>
-            <div class="slider-2-nav-item">7</div>
-            <div class="slider-2-nav-item">8</div>
-            <div class="slider-2-nav-item">9</div>
-            <div class="slider-2-nav-item">10</div>
-            <div class="slider-2-nav-item">11</div>
-            <div class="slider-2-nav-item">12</div>
-            <div class="slider-2-nav-item">13</div>
-            <div class="slider-2-nav-item">14</div>
+            <div class="slider-2-nav-item">
+              <img src="./img/img8.jpg" />
+            </div>
+            <div class="slider-2-nav-item">
+              <img src="./img/img9.jpg" />
+            </div>
+            <div class="slider-2-nav-item">
+              <img src="./img/img10.jpg" />
+            </div>
+            <div class="slider-2-nav-item">
+              <img src="./img/img11.jpg" />
+            </div>
+            <div class="slider-2-nav-item">
+              <img src="./img/img12.jpg" />
+            </div>
+            <div class="slider-2-nav-item">
+              <img src="./img/img13.jpg" />
+            </div>
+            <div class="slider-2-nav-item">
+              <img src="./img/img14.jpg" />
+            </div>
+            <div class="slider-2-nav-item">
+              <img src="./img/img15.jpg" />
+            </div>
           </div>
         </div>
       </div>

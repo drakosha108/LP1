@@ -1,39 +1,52 @@
 $('.slider-1').slick({
-    centerMode: true,
-    centerPadding: '80px',
-    slidesToShow: 3,
-    responsive: [
-      {
-        breakpoint: 1000,
-        settings: {
-          centerPadding: '80px',
-          slidesToShow: 1
-        }
+  centerMode: true,
+  centerPadding: '80px',
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 1000,
+      settings: {
+        centerPadding: '80px',
+        slidesToShow: 1
       }
-    ]
-  });
+    }
+  ]
+});
 
-  $('.slider-2-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.slider-2-nav'
-  });
-  
-  $('.slider-2-nav').slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    asNavFor: '.slider-2-for',
-    dots: true,
-    centerMode: true,
-    focusOnSelect: true,
-    responsive: [
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3
-          }
-        }
-      ]
-  });
+$('.slider-2-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-2-nav'
+});
+
+$('.slider-2-nav').slick({
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  asNavFor: '.slider-2-for',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3
+      }
+    }
+  ]
+});
+
+$('#nav-home').click(e => {
+  $('body').scrollTo('#home', 500);
+});
+$('#nav-about').click(e => {
+  $('body').scrollTo('#about', 500);
+});
+$('#nav-products').click(e => {
+  $('body').scrollTo('#products', 500);
+});
+$('#nav-contact').click(e => {
+  $('body').scrollTo('#contact', 500);
+});
