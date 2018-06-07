@@ -3,10 +3,6 @@ html{
   min-height:100%;
 }
 
-body{
-  min-height:100%;
-}
-
 * {
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -17,8 +13,13 @@ body {
   background-image: url(image.jpg);
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
   position: relative;
+  background-repeat:no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .background {
