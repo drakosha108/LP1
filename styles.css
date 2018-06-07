@@ -136,7 +136,7 @@ ul.navigation > li:hover a {
 
 .content-block {
   display: flex;
-  height: 400px;
+  min-height: 400px;
   align-items: center;
 }
 
@@ -185,7 +185,6 @@ ul.navigation > li:hover a {
 
 .slider-thumbnail-content {
   width: 50%;
-  margin: 40px;
   margin-right: 0;
   display: flex;
 }
@@ -265,7 +264,8 @@ ul.navigation > li:hover a {
   right: -40px;
 }
 
-.slick-prev:before, .slick-next:before {
+.slick-prev::before,
+.slick-next::before {
   color: black;
 }
 
@@ -285,6 +285,10 @@ ul.navigation > li:hover a {
 
   .slider-thumbnail-text {
     width: 80%;
+  }
+
+  .content-block {
+    flex-direction: column;
   }
 
   .content-block-text {
