@@ -27,7 +27,7 @@ body {
   top: 0;
   height: 50px;
   position: fixed;
-  background: #00797F;
+  background: #00797f;
   z-index: 1;
 }
 
@@ -56,8 +56,8 @@ body {
   border-radius: 10px;
   width: 150px;
   height: 40px;
+  line-height: 40px;
   margin: 10px;
-  padding: 5px;
 }
 
 .button-1 {
@@ -68,18 +68,21 @@ body {
   background: red;
 }
 
+.button-label {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
 .footer {
   height: 50px;
-  background: #00797F;
+  background: #00797f;
 }
 
 .circle-logo {
   width: 200px;
   height: 200px;
   background: black;
-
-  /* -moz-border-radius: 100px;
-	-webkit-border-radius: 100px; */
   border-radius: 100px;
   margin: auto;
   display: flex;
@@ -117,7 +120,7 @@ ul.navigation > li:hover a {
 
 .title-block {
   height: 200px;
-  background-color: #C1E7FF;
+  background-color: #c1e7ff;
 }
 
 .content-block {
@@ -160,9 +163,9 @@ ul.navigation > li:hover a {
   height: 500px;
   margin: auto;
   display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider-thumbnail-content {
@@ -180,7 +183,6 @@ ul.navigation > li:hover a {
   background: rgb(83, 68, 92);
 }
 
-
 .slider-1 {
   width: 80%;
 }
@@ -191,11 +193,15 @@ ul.navigation > li:hover a {
   transform: scale(1.2);
 }
 
-.slider-1-item, .slider-2-for-item, .slider-2-nav-item {
+.slider-1-item,
+.slider-2-for-item,
+.slider-2-nav-item {
   overflow: hidden;
 }
 
-.slider-1-item > img, .slider-2-for-item > img, .slider-2-nav-item > img {
+.slider-1-item > img,
+.slider-2-for-item > img,
+.slider-2-nav-item > img {
   display: block;
   width: 100%;
   height: 100%;
@@ -208,25 +214,30 @@ ul.navigation > li:hover a {
   margin: 50px;
   transition: all 0.5s;
 }
+
 .slider-2-for {
   padding: 40px;
   padding-bottom: 0;
   width: 100%;
 }
+
 .slider-2-for-item {
   width: 100%;
   height: 300px;
   margin: 20px;
   transition: all 0.5s;
 }
+
 .slider-2-nav {
   width: 80%;
 }
+
 .slider-2-nav-item {
   height: 50px;
   margin: 20px;
   transition: all 0.5s;
 }
+
 .slider-1-wrapper {
   background: rgba(255, 255, 255, 0.5);
 }
@@ -236,27 +247,34 @@ ul.navigation > li:hover a {
     margin-left: 10px;
     margin-right: 10px;
   }
+
   .slider-block {
     flex-direction: column;
   }
+
   .slider-thumbnail-content {
     width: 80%;
   }
+
   .slider-thumbnail-text {
     width: 80%;
   }
+
   .content-block-text {
     border-radius: 20px;
   }
+
   .content-block-circle {
     width: 100px;
     height: 100px;
     border-radius: 50px;
     margin: 30px;
   }
+
   .slider-1-item {
     margin: 30px;
   }
+
   .content-block-text-wrapper {
     padding: 20px;
   }
