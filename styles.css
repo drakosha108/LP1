@@ -143,6 +143,7 @@ ul.navigation > li:hover a {
 .content-block-circle {
   width: 150px;
   height: 150px;
+  min-width: 150px;
   background-size: cover;
   background-image: url(img/cat.jpg);
   background-position: center;
@@ -160,7 +161,8 @@ ul.navigation > li:hover a {
 .content-block-text {
   background: #81a5a6;
   height: 100%;
-  border-radius: 50px;
+  border-radius: 40px;
+  padding: 20px;
 }
 
 .slider-block {
@@ -192,8 +194,8 @@ ul.navigation > li:hover a {
   width: 50%;
   margin: 40px;
   padding: 20px;
-  opacity: 0.5;
-  background: rgb(83, 68, 92);
+  opacity: 0.8;
+  background: #ecddec;
 }
 
 .slider-1 {
@@ -292,6 +294,7 @@ ul.navigation > li:hover a {
   .content-block-circle {
     width: 100px;
     height: 100px;
+    min-width: 100px;
     border-radius: 50px;
     margin: 30px;
   }
