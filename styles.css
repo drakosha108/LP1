@@ -117,7 +117,7 @@ ul.navigation > li:hover a {
 
 .title-block {
   height: 200px;
-  background-color: #5A787F;
+  background-color: #C1E7FF;
 }
 
 .content-block {
@@ -142,7 +142,7 @@ ul.navigation > li:hover a {
 }
 
 .content-block-text {
-  background: #00768C;
+  background: #81a5a6;
   height: 100%;
   border-radius: 50px;
 }
@@ -155,7 +155,7 @@ ul.navigation > li:hover a {
 }
 
 .slider-2 {
-  background: rgb(99, 113, 189);
+  background: #81a5a6;
   width: 100%;
   height: 500px;
   margin: auto;
