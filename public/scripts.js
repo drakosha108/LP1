@@ -6,7 +6,14 @@ $('.slider-1').slick({
     {
       breakpoint: 1000,
       settings: {
-        centerPadding: '80px',
+        centerPadding: '70px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 560,
+      settings: {
+        centerPadding: '40px',
         slidesToShow: 1
       }
     }
