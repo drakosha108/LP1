@@ -20,7 +20,7 @@ const makeTemplate = (template, data) => new Promise((resolve, reject) => {
 
 const sendEmail = (html, subject, to) => new Promise((resolve, reject) => {
   transporter.sendMail({
-    from: process.env.CONTACT_EMAIL,
+    from: process.env.SENDER_USER,
     to,
     subject,
     html,

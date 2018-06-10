@@ -4,7 +4,7 @@ const contactRequest = async (req, res) => {
   try {
     const { name, email, phone } = req.body;
     console.log(req.body);
-    const info1  = await sendTemplateEmail('for-me', 'Customer request', { name, email, phone }, 'mariasheremet17@gmail.com');
+    const info1  = await sendTemplateEmail('for-me', 'Customer request', { name, email, phone }, process.env.CONTACT_EMAIL);
     console.log(info1);
     const info2  = await sendTemplateEmail('for-you', 'Subscribed!', { name, email, phone }, email);
     console.log(info2);
