@@ -327,6 +327,26 @@ ul.navigation > li:hover a {
   font-size: 20px;
   cursor: pointer;
 }
+
+.icon-item-sub {
+  text-align: center;
+  margin-top: 20px;
+  max-width: 400px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+}
+
+.icon-block {
+  background-color: #c1e7ff;
+  display: flex;
+  justify-content: space-around;
+}
+
 @media only screen and (max-width: 900px) {
   .slider-2-nav-item {
     margin-left: 10px;
@@ -381,5 +401,7 @@ ul.navigation > li:hover a {
     display: block;
     margin-right: 0;
   }
+  .icon-block {
+    flex-direction: column;
   }
 }
