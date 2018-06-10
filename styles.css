@@ -347,6 +347,37 @@ ul.navigation > li:hover a {
   justify-content: space-around;
 }
 
+.contact-form-wrapper {
+  background-color: #c1e7ff;
+  text-align: center;
+  padding: 10px;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+}
+
+.contact-form-right {
+  margin: 20px;
+}
+
+.contact-form-left {
+  margin: 20px;
+  width: 100%;
+}
+
+.contact-form-left > form {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contact-form-left input {
+  margin: 10px;
+}
+
 @media only screen and (max-width: 900px) {
   .slider-2-nav-item {
     margin-left: 10px;
@@ -407,6 +438,9 @@ ul.navigation > li:hover a {
     padding: 100px;
   }
   .icon-block {
+    flex-direction: column;
+  }
+  .contact-form {
     flex-direction: column;
   }
 }
