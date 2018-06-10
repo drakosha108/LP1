@@ -21,8 +21,10 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
+    "ejs": "^2.6.1",
     "express": "^4.16.3",
     "htmlhint": "^0.9.13",
+    "nodemailer": "^4.6.6",
     "stylelint": "^9.2.1"
   }
 }

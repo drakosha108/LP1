@@ -67,3 +67,17 @@ $('.button-1').click(e => {
 $('.button-2').click(e => {
   $('body').scrollTo('#subscribe', 500);
 });
+$('#contact-form').submit(function (e) {
+  const data = $('#contact-form').serializeArray().reduce((prev, curr) => ({
+    ...prev,
+    [curr.name]: curr.value,
+  }), {});
+  $.ajax({
+    type: 'POST',
+    url: '/contact',
+    contentType: 'application/json',
+    data: JSON.stringify(data),
+    success: data => alert(data && data.result),
+  });
+  e.preventDefault();
+});

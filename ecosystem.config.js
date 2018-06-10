@@ -10,7 +10,10 @@ module.exports = {
       name      : 'API',
       script    : './server.js',
       env: {
-        PORT: '8090'
+        PORT: '8090',
+        SENDER_USER: null, // change
+        SENDER_PASS: null, // change
+        CONTACT_EMAIL: null // change
       },
       instances  : 4,
       exec_mode  : "cluster"
