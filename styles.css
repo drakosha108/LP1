@@ -310,6 +310,23 @@ ul.navigation > li:hover a {
   margin-right: 20px;
 }
 
+.label-subscribe {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.button-subscribe {
+  display: inline-block;
+  background: #4086b3;
+  border-radius: 30px;
+  height: 60px;
+  border: none;
+  color: white;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-size: 20px;
+  cursor: pointer;
+}
 @media only screen and (max-width: 900px) {
   .slider-2-nav-item {
     margin-left: 10px;
@@ -359,6 +376,10 @@ ul.navigation > li:hover a {
 
   .quote-block > img {
     width: 50px;
+  }
+  .label-subscribe {
+    display: block;
+    margin-right: 0;
   }
   }
 }
