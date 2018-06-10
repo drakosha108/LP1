@@ -55,11 +55,14 @@ body {
 .full-height-block-center {
   margin: auto;
   text-align: center;
+  background: radial-gradient(circle at center, #fff 0%, rgba(255,255,255,0) 66%);
+  padding: 200px;
 }
 
 .button-container {
   margin: 10px;
   display: flex;
+  justify-content: center;
 }
 
 .button {
@@ -93,16 +96,15 @@ body {
 }
 
 .circle-logo {
-  width: 200px;
+  width: 500px;
   height: 200px;
   background: #637272;
-  border-radius: 100px;
+  border-radius: 50%;
   margin: auto;
   display: flex;
 }
 
 .first-title {
-  color: #fff;
   margin: auto;
 }
 
@@ -155,7 +157,6 @@ ul.navigation > li:hover a {
   height: 150px;
   min-width: 150px;
   background-size: cover;
-  background-image: url(img/cat.jpg);
   background-position: center;
   border-radius: 75px;
   display: flex;
@@ -179,7 +180,7 @@ ul.navigation > li:hover a {
   min-height: 75vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .slider-2 {
@@ -194,13 +195,14 @@ ul.navigation > li:hover a {
 }
 
 .slider-thumbnail-content {
-  width: 50%;
+  width: 45%;
+  margin: 40px;
   margin-right: 0;
   display: flex;
 }
 
 .slider-thumbnail-text {
-  width: 50%;
+  width: 45%;
   margin: 40px;
   padding: 20px;
   opacity: 0.8;
