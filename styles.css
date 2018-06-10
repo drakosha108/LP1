@@ -281,6 +281,35 @@ ul.navigation > li:hover a {
   color: black;
 }
 
+.image-me {
+  background-image: url(img/me.jpg);
+}
+
+.image-cat {
+  background-image: url(img/cat.jpg);
+}
+
+.quote-block {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c1e7ff;
+  flex-wrap: wrap;
+}
+
+.quote-block > * {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.quote-block-inner {
+  display: flex;
+}
+.quote-block-inner > h3 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 @media only screen and (max-width: 900px) {
   .slider-2-nav-item {
     margin-left: 10px;
@@ -303,6 +332,10 @@ ul.navigation > li:hover a {
     flex-direction: column;
   }
 
+  .content-block.content-block-reverse {
+    flex-direction: column-reverse;
+  }
+
   .content-block-text {
     border-radius: 20px;
   }
@@ -321,5 +354,11 @@ ul.navigation > li:hover a {
 
   .content-block-text-wrapper {
     padding: 20px;
+    padding-top: 0;
+  }
+
+  .quote-block > img {
+    width: 50px;
+  }
   }
 }
