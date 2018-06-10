@@ -377,6 +377,19 @@ ul.navigation > li:hover a {
 
 .contact-form-left input {
   margin: 10px;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.contact-form-submit {
+  background: #00797f;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact-form-submit:hover {
+  background: #004649;
 }
 
 @media only screen and (max-width: 900px) {
