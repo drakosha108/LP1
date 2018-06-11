@@ -53,38 +53,43 @@ $('.slider-2-nav').slick({
   ]
 });
 
-$('#nav-home').click(e => {
+$('#nav-home').click(function(e) {
   $('body').scrollTo('#home', 500);
 });
-$('#nav-about').click(e => {
+$('#nav-about').click(function(e) {
   $('body').scrollTo('#about', 500);
 });
-$('#nav-gallery').click(e => {
+$('#nav-gallery').click(function(e) {
   $('body').scrollTo('#gallery', 500);
 });
-$('#nav-products').click(e => {
+$('#nav-products').click(function(e) {
   $('body').scrollTo('#products', 500);
 });
-$('#nav-contact').click(e => {
+$('#nav-contact').click(function(e) {
   $('body').scrollTo('#contact', 500);
 });
-$('.button-1').click(e => {
+$('.button-1').click(function(e) {
   $('body').scrollTo('#contact', 500);
 });
-$('.button-2').click(e => {
+$('.button-2').click(function(e) {
   $('body').scrollTo('#subscribe', 500);
 });
 $('#contact-form').submit(function (e) {
-  const data = $('#contact-form').serializeArray().reduce((prev, curr) => ({
-    ...prev,
-    [curr.name]: curr.value,
-  }), {});
+  const data = $('#contact-form').serializeArray().reduce(function (prev, curr) {
+    prev[curr.name] = curr.value;
+    return prev;
+  }, {});
   $.ajax({
     type: 'POST',
     url: '/contact',
     contentType: 'application/json',
     data: JSON.stringify(data),
-    success: data => alert(data && data.result),
+    success: function(data) {
+      alert(data && data.result);
+    },
+    error: function(error) {
+      alert('Error:' + error);
+    },
   });
   e.preventDefault();
 });
